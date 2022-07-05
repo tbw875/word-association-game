@@ -26,12 +26,13 @@ const questions = [
 
 let score = 0
 let clicked = []
+let n = 0
 
 scoreDisplay.textContent = score
 
 function populateQuestions() {
     questions.forEach((question) => {
-        let n = 1
+        n++
 
         const questionBox = document.createElement("div")
         questionBox.classList.add("question-box")
