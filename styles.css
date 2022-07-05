@@ -1,0 +1,60 @@
+.app {
+    font-family: "Trebuchet MS", "Lucinda Grande", Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 100px;
+}
+
+.questions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.question-box {
+    background-color: #1F2421;
+    margin: 15px;
+    color: #8FB339;
+    border-radius: 3px;
+    padding: 0 40px 10px 40px;
+}
+
+.question-box h1 {
+    text-align: left;
+    color: #FE5F00
+}
+
+.question-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.question-button {
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #FE5F00;
+    color: #1F2421;
+}
+
+.question-button:disabled {
+    background-color: #808F87;
+    color: #1f2421;
+}
+
+.answer-display {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#FE5F00;
+}
+
+/* 
+primary: #1F2421
+secondary: #8FB339
+tertiary: #FE5F00
+disable: #808F87
+*/
