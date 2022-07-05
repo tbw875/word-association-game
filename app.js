@@ -31,11 +31,15 @@ scoreDisplay.textContent = score
 
 function populateQuestions() {
     questions.forEach((question) => {
+        let n = 1
+
         const questionBox = document.createElement("div")
         questionBox.classList.add("question-box")
 
+        // Logo
+        // Display logo and level header. Level header should change in each question box to corresponding level.
         const logoDisplay = document.createElement("h1")
-        logoDisplay.textContent = "➢"
+        logoDisplay.textContent = `➢ Level ${n}`
         questionBox.append(logoDisplay)
 
         question.quiz.forEach((tip) => {
@@ -100,6 +104,8 @@ function checkAnswer(
     }
     clicked.push(option)
     questionButton.disabled = clicked.includes(option)
+
+    // When you click on one of the answer pairs, it should disable both answers. You don't get to guess again.
 }
 
 function addResult(answerDisplay, answer) {
